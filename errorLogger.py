@@ -33,13 +33,13 @@ def LogTheError(exception, scriptName):
         file.write(traceback.format_exc() + "\n\n")
 
     # E-mail Variables:
-    fromEmail = 'WUDGISTECHSERVICESDISTRIBUTION@pbcwater.com'  # Email sender
-    toEmail = ['emyers@pbcwater.com', 'ajbaker@pbcwater.com', 'dthorpe@pbcwater.com']
-    smtpServer = 'webmail.pbcwater.com'  # SMTP Server Name
-    smtpPort = 25  # SMTP Server port
+    fromEmail = 'test@gmail.com'  # Email sender
+    toEmail = ['person1@gmail.com, person2@gmail.com']
+    smtpServer = 'email.server.com'  # SMTP Server Name
+    smtpPort = 00000  # SMTP Server port
 
     SUBJECT = f'Error Log - {scriptName}'
-    TEXT = f"An Error has occured.  \nPlease check the latest error in: 'W:\GIS\Scripts\Scheduled_Scripts_GISLIC\errorLog.txt'"
+    TEXT = f"An Error has occured.  \nPlease check the latest error in: 'FILE PATH OF ERROR LOG HERE'"
 
     msg = MIMEText(TEXT)
     msg['Subject'] = SUBJECT
